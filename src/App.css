@@ -1,10 +1,49 @@
 body,
 html {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: radial-gradient(at 20% 30%, #f53b2a, transparent),
-    radial-gradient(at 80% 70%, #fbe56b, transparent),
-    radial-gradient(at 50% 50%, #000000, transparent),
-    radial-gradient(at 30% 80%, #b7e4ea, transparent),
-    radial-gradient(at 70% 20%, #ae2724, transparent);
+  background: radial-gradient(
+      64% 70% at 100% 0%,
+      rgba(247, 214, 98, 0.8) 0%,
+      rgba(247, 214, 98, 0.2) 52%,
+      rgba(247, 214, 98, 0) 100%
+    ),
+    linear-gradient(
+      208deg,
+      rgba(240, 66, 42, 1) 7%,
+      rgba(240, 88, 42, 0.2) 43%,
+      rgba(240, 101, 42, 0) 64%
+    ),
+    radial-gradient(
+      115% 123% at 0% -15%,
+      rgba(231, 79, 106, 1) 1%,
+      rgba(231, 79, 106, 0.2) 67%,
+      rgba(231, 79, 106, 0) 100%
+    ),
+    linear-gradient(
+      334deg,
+      rgba(83, 208, 236, 0.8) 0%,
+      rgba(83, 208, 236, 0.2) 20%,
+      rgba(138, 137, 190, 0) 35%
+    ),
+    radial-gradient(
+      109% 149% at 4% 98%,
+      rgba(27, 49, 128, 1) 0%,
+      rgba(27, 49, 128, 0) 100%
+    ),
+    linear-gradient(
+      142deg,
+      rgba(78, 173, 235, 1) 19%,
+      rgba(78, 173, 235, 0) 99%
+    );
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
