@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import './App.css';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const CreatePlayers = lazy(() => import('./components/CreatePlayers'));
 
@@ -9,6 +10,7 @@ function App() {
       <div className="flex flex-col items-center justify-center w-full h-screen">
         <Suspense fallback={<Loading />}>
           <CreatePlayers></CreatePlayers>
+          <SpeedInsights />
         </Suspense>
       </div>
     </>
