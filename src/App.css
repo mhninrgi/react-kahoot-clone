@@ -35,15 +35,3 @@ html {
       rgba(78, 173, 235, 0) 99%
     );
 }
-
-@keyframes aurora {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
