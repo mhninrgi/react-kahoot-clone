@@ -7,15 +7,11 @@ export default defineConfig({
   plugins: [
     react(),
     basicSsl({
-      /** name of certification */
-      name: 'test',
-      /** custom trust domains */
-      domains: ['*.custom.com'],
-      /** custom certification directory */
-      certDir: '/Users/.../.devServer/cert',
+      domains: ['https://localhost:5174'],
     }),
   ],
   server: {
     https: true,
+    port: 5174
   },
 });

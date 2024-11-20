@@ -34,4 +34,9 @@ html {
       rgba(78, 173, 235, 1) 19%,
       rgba(78, 173, 235, 0) 99%
     );
+  @apply overflow-x-hidden;
+}
+
+#root {
+  @apply w-full h-full min-h-dvh;
 }

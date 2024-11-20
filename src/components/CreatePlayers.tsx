@@ -42,6 +42,7 @@ export default function CreatePlayers() {
 
     const fetchAndSetPlayers = async () => {
       const players = await fetchPlayers();
+      console.log(players, 'players');
       if (isMounted) setDisplayValues(players);
     };
 
@@ -87,7 +88,7 @@ export default function CreatePlayers() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    startGame ? navigate('/questions') : null;
+    startGame ? navigate('/questions/0') : null;
   }, [startGame]);
 
   return (
